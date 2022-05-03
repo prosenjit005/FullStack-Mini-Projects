@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "bfa5bb79-d5c2-4b97-8b07-264b828f604b",
+		"name": "P2-SpringBoot-MongoDB-Atlas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9192/companyapi/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"companyapi",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyCode\":\"C001\",\r\n    \"companyName\":\"Copany name 1\",\r\n    \"companyCEO\":\"CEO 1\",\r\n    \"companyTurnover\":11.25,\r\n    \"companyWebsite\":\"www.company1.com\",\r\n    \"stockExchange\":\"NSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9192/companyapi/addCompany",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"companyapi",
+						"addCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCompanies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"companyCode\": \"C007\",\r\n        \"companyName\": \"Copany name 6\",\r\n        \"companyCEO\": \"CEO 6\",\r\n        \"companyTurnover\": 31.25,\r\n        \"companyWebsite\": \"www.company6.com\",\r\n        \"stockExchange\": \"NSE\"\r\n    },\r\n    {\r\n        \"companyCode\": \"C008\",\r\n        \"companyName\": \"Copany name 6\",\r\n        \"companyCEO\": \"CEO 6\",\r\n        \"companyTurnover\": 31.25,\r\n        \"companyWebsite\": \"www.company6.com\",\r\n        \"stockExchange\": \"NSE\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9192/companyapi/addCompanies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"companyapi",
+						"addCompanies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCompanies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9192/companyapi/getCompanies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"companyapi",
+						"getCompanies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findCompanyById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9192/companyapi/companyId/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"companyapi",
+						"companyId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findCompanyByCode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9192/companyapi/companyCode/C001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"companyapi",
+						"companyCode",
+						"C001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCompany",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5,\r\n    \"companyCode\":\"C005a\",\r\n    \"companyName\":\"Copany name 5a\",\r\n    \"companyCEO\":\"CEO 6\",\r\n    \"companyTurnover\":31.25,\r\n    \"companyWebsite\":\"www.company6.com\",\r\n    \"stockExchange\":\"BSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9192/companyapi/updateCompany",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"companyapi",
+						"updateCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCompany",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9192/companyapi/deleteCompany/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9192",
+					"path": [
+						"companyapi",
+						"deleteCompany",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
