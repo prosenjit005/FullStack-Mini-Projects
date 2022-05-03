@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "c50dd303-f0b4-4651-98a7-9f16463ba146",
+		"name": "P3b-SpringBoot-Kafka-Consumer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "consumeStringMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9194/consumeStringMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9194",
+					"path": [
+						"consumeStringMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consumeJsonMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9194/consumeJsonMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9194",
+					"path": [
+						"consumeJsonMessage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
