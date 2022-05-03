@@ -25,3 +25,19 @@ CRUD Operations Done here:
 ## 2. P2-SpringBoot-MongoDB-Atlas
 SpringBoot Project with MongoDB Atlas integration.  
 
+Initial Dependencies added:  
+    1. Lombok  
+    2. Spring Boot DevTools  
+    3. Lombok  
+    4. Spring Data MongoDB  
+    5. Spring Web  
+
+    
+## P3a-SpringBoot-Kafka-Producer
+SpringBoot Project as Kafka Producer.  
+
+Initial Dependencies added:  
+## P3b-SpringBoot-Kafka-Consumer
+SpringBoot Project as Kafka Consumer.  
+
+Initial Dependencies added:  
