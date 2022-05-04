@@ -6,11 +6,11 @@
 ## 1. P1-SpringBoot-MySQL
 SpringBoot Project with local MySQL integration.  
   
-Initial Dependencies added:  
-    1. Lombok  
-    2. Spring Data JPA  
-    3. MySQL Driver  
-    4. Spring Web  
+    Initial Dependencies added:  
+        1. Lombok  
+        2. Spring Data JPA  
+        3. MySQL Driver  
+        4. Spring Web  
 
 CRUD Operations Done here:  
     1. addCompany  
@@ -25,11 +25,11 @@ CRUD Operations Done here:
 ## 2. P2-SpringBoot-MongoDB-Atlas
 SpringBoot Project with MongoDB Atlas integration.  
 
-Initial Dependencies added:  
-    1. Lombok  
-    2. Spring Boot DevTools  
-    3. Spring Data MongoDB  
-    4. Spring Web  
+    Initial Dependencies added:  
+        1. Lombok  
+        2. Spring Boot DevTools  
+        3. Spring Data MongoDB  
+        4. Spring Web  
 
     
 ## 3. SpringBoot-Kafka-Producer and Consumer
