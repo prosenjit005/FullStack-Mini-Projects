@@ -49,7 +49,40 @@ SpringBoot Project with MongoDB Atlas integration.
             1. Lombok  
             2. Spring Boot DevTools  
             3. Spring Web  
-            4. Spring for Apache Kafka
+            4. Spring for Apache Kafka  
+
+Kafka Commands:(Kafka Version: 2.8.1)  
+Open 2 cmd in: 
+```bash
+  C:\Prosenjit\IT_Softwares\Kafka\kafka\bin\windows  
+``` 
+start zookeeper.start bat (Default port = 2181)  
+```bash
+  zookeeper-server-start.bat ./../../config/zookeeper.properties
+``` 
+start Kafka server (Default port = 9092)
+```bash
+  kafka-server-start.bat ./../../config/server.properties
+``` 
+  
+Now let’s create a topic:  
+Open cmd in:  
+```bash
+  C:\Prosenjit\IT_Softwares\Kafka\kafka\bin\windows
+``` 
+```bash
+  kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 -topic demo1topic
+``` 
+Note: Here 2181 is the zookeeper port. Here “demo1topic” is the topic name.
+
+To check all the topics:  
+```bash
+  kafka-topics.bat --zookeeper localhost:2181 –list
+``` 
+
+
+
+sadsa
 ## 4. P4-SpringBoot-Kafka-MySQL and MongoDB  
 1. P4a-SpringBoot-Kafka-Producer-MySQL  
         SpringBoot Project as Kafka Producer. 
