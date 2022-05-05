@@ -13,11 +13,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springboot.kafka.entities.Company;
+import com.springboot.kafka.repository.CompanyMongoDbRepository;
 import com.springboot.kafka.services.SpringbootMySqlService;
 
 @RestController
 @RequestMapping("companyapi")
 public class KafkaProducerController {
+
+	@Autowired
+	private CompanyMongoDbRepository companyMongoDbRepository;
 
 	private String CRUD_C = "C";
 	private String CRUD_U = "U";
@@ -52,19 +56,22 @@ public class KafkaProducerController {
 	}
 
 	@GetMapping("/getCompanies")
-	public List<Company> findAllCompanies() {
+	public List<com.springboot.kafka.mongoDbEntities.Company> findAllCompanies() {
 		// for this Read operation we will use
 		// MongoDB instead of MySQL
-		return springbootMySqlService.getAllCompanies();
+		List<com.springboot.kafka.mongoDbEntities.Company> companyList = companyMongoDbRepository.findAll();
+		return companyList;
 	}
 
 	@GetMapping("/companyId/{id}")
 	public Company findCompanyById(@PathVariable Integer id) {
+		//TODO with mongoDB
 		return springbootMySqlService.getCompanyById(id);
 	}
 
 	@GetMapping("/companyCode/{code}")
 	public Company findCompanyByCode(@PathVariable String code) {
+		//TODO with mongoDB
 		return springbootMySqlService.getCompanyByCompanyCode(code);
 	}
 

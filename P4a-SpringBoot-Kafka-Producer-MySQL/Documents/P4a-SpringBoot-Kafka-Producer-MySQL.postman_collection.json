@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "43314f78-c3e9-433f-b0a6-89d4a8c6d3a9",
+		"name": "P4a-SpringBoot-Kafka-Producer-MySQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyCode\":\"C003\",\r\n    \"companyName\":\"Copany name 3\",\r\n    \"companyCEO\":\"CEO 2\",\r\n    \"companyTurnover\":31.25,\r\n    \"companyWebsite\":\"www.company1.com\",\r\n    \"stockExchange\":\"NSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9195/companyapi/addCompany",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"companyapi",
+						"addCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCompanies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"companyCode\": \"C007\",\r\n        \"companyName\": \"Copany name 6\",\r\n        \"companyCEO\": \"CEO 6\",\r\n        \"companyTurnover\": 31.25,\r\n        \"companyWebsite\": \"www.company6.com\",\r\n        \"stockExchange\": \"NSE\"\r\n    },\r\n    {\r\n        \"companyCode\": \"C008\",\r\n        \"companyName\": \"Copany name 6\",\r\n        \"companyCEO\": \"CEO 6\",\r\n        \"companyTurnover\": 31.25,\r\n        \"companyWebsite\": \"www.company6.com\",\r\n        \"stockExchange\": \"NSE\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9195/companyapi/addCompanies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"companyapi",
+						"addCompanies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCompany",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5,\r\n    \"companyCode\":\"C0056a\",\r\n    \"companyName\":\"Copany name 56a\",\r\n    \"companyCEO\":\"CEO 56\",\r\n    \"companyTurnover\":31.25,\r\n    \"companyWebsite\":\"www.company6.com\",\r\n    \"stockExchange\":\"BSE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9195/companyapi/updateCompany",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"companyapi",
+						"updateCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCompany",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9195/companyapi/deleteCompany/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"companyapi",
+						"deleteCompany",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCompanies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9195/companyapi/getCompanies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9195",
+					"path": [
+						"companyapi",
+						"getCompanies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
