@@ -90,19 +90,23 @@ sadsa
         The same will be sent to Kafka Consumer to be in sync with MongoDB.   
 
         Initial Dependencies added:  
-            1. Lombok  
-            2. Spring Boot DevTools  
-            3. Spring Web  
-            4. Spring for Apache Kafka  
+            1. Spring Boot DevTools
+            2. Lombok
+            3. Spring for Apache Kafka
+            4. Spring Data JPA
+            5. MySQL Driver
+            6. Spring Data MongoDB
+            7. Spring Web
 
 2. P4b-SpringBoot-Kafka-Consumer-MongoDB  
         SpringBoot Project as Kafka Consumer.  
 
         Initial Dependencies added:  
-            1. Lombok  
-            2. Spring Boot DevTools  
-            3. Spring Web  
-            4. Spring for Apache Kafka
+            1. Spring Boot DevTools
+            2. Lombok
+            3. Spring for Apache Kafka
+            4. Spring Data MongoDB
+            5. Spring Web
 
 Replicate all data from MySQL to MongoDB.  
 Export from MySQL DB, import into MongoDB.  
