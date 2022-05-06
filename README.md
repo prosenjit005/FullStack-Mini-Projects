@@ -1,7 +1,11 @@
 # FullStack-Mini-Projects
 
-
-
+Contents:  
+    1. P1-SpringBoot-MySQL  
+https://github.com/prosenjit005/FullStack-Mini-Projects#1-p1-springboot-mysql  
+    2. P2-SpringBoot-MongoDB-Atlas  
+https://github.com/prosenjit005/FullStack-Mini-Projects#2-p2-springboot-mongodb-atlas  
+    3. 
 
 ## 1. P1-SpringBoot-MySQL
 SpringBoot Project with local MySQL integration.  
@@ -112,7 +116,7 @@ Replicate all data from MySQL to MongoDB.
 Export from MySQL DB, import into MongoDB.  
 Here it is a table, there it is a collection.  
 Here it is a record, there it is a document.  
-## P5-SpringBoot-SpringSecurity-BasicAuthenticationAuthorization
+## 5. P5-SpringBoot-SpringSecurity-BasicAuthenticationAuthorization
 
     Initial Dependencies added:  
         1. Spring Boot DevTools  
@@ -121,7 +125,7 @@ Here it is a record, there it is a document.
 
 Role based authorization  
 URL based authorization
-## P6-SpringBoot-SpringSecurity-JWT
+## 6. P6-SpringBoot-SpringSecurity-JWT
 
     Initial Dependencies added:  
         1. Spring Boot DevTools  
