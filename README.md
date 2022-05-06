@@ -112,3 +112,17 @@ Replicate all data from MySQL to MongoDB.
 Export from MySQL DB, import into MongoDB.  
 Here it is a table, there it is a collection.  
 Here it is a record, there it is a document.  
+## P5-SpringBoot-SpringSecurity-BasicAuthenticationAuthorization
+
+    Initial Dependencies added:  
+        1. Spring Boot DevTools  
+        2. Spring Web  
+        3. Spring Security
+
+Role based authorization  
+URL based authorization
+## P6-SpringBoot-SpringSecurity-JWT
+
+    Initial Dependencies added:  
+        1. Spring Boot DevTools  
+        2. Spring Web  
