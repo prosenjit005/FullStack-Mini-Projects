@@ -1,11 +1,8 @@
 # FullStack-Mini-Projects
 
-Contents:  
-    1. P1-SpringBoot-MySQL  
-https://github.com/prosenjit005/FullStack-Mini-Projects#1-p1-springboot-mysql  
-    2. P2-SpringBoot-MongoDB-Atlas  
-https://github.com/prosenjit005/FullStack-Mini-Projects#2-p2-springboot-mongodb-atlas  
-    3. 
+# Table of Contents
+1. [P1-SpringBoot-MySQL ](#1-p1-springboot-mysql  )
+2. [P2-SpringBoot-MongoDB-Atlas](#2-p2-springboot-mongodb-atlas)
 
 ## 1. P1-SpringBoot-MySQL
 SpringBoot Project with local MySQL integration.  
